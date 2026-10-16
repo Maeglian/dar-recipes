@@ -1,0 +1,78 @@
+openspec/changes/add-recipe-app/tasks.md
+  s_de2ed2bd090c5d::t_ca823206a29f6d 30,44,59
+openspec/changes/add-recipe-app/specs/local-data/spec.md
+  s_de2ed2bd090c5d::t_9fa5c503db0e1a 62-72
+openspec/changes/add-recipe-app/specs/recipes/spec.md
+  s_de2ed2bd090c5d::t_9fa5c503db0e1a 102-123
+openspec/changes/add-recipe-app/design.md
+  s_de2ed2bd090c5d::t_9fa5c503db0e1a 173-178
+openspec/changes/add-recipe-app/specs/recipe-ratings/spec.md
+  s_de2ed2bd090c5d::t_9fa5c503db0e1a 45-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "0.0.61",
+  "base_commit_sha": "6113d8d43bcd2b7f50a2e2d740ce6517a3a7e56f",
+  "prompts": {},
+  "sessions": {
+    "s_de2ed2bd090c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "09bbe74f-1feb-4e93-95fa-94ef6502669d",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Maria Isaeva <isaeva-mariya@yandex.ru>",
+      "usage": [
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 36,
+          "output_tokens": 17251,
+          "cache_read_tokens": 7801789,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 18791,
+          "assistant_messages": 18,
+          "turns": 0,
+          "ai_wall_ms": 66263,
+          "first_ts": "2026-10-16T15:51:38.579Z",
+          "last_ts": "2026-10-16T15:57:27.367Z",
+          "session_total_output_tokens": 772110
+        }
+      ],
+      "tools": [
+        {
+          "tool": "Bash",
+          "model": "claude-opus-5-5",
+          "calls": 4,
+          "result_chars": 799,
+          "result_input_tokens": 8,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 4400,
+          "call_output_tokens": 4387
+        },
+        {
+          "tool": "Read",
+          "model": "claude-opus-5-5",
+          "calls": 2,
+          "result_chars": 0,
+          "result_input_tokens": 4,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 1959,
+          "call_output_tokens": 488
+        },
+        {
+          "tool": "mcp__playwright__browser_run_code_unsafe",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 1209,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 1219,
+          "call_output_tokens": 640
+        }
+      ],
+      "accepted_lines": 49,
+      "overridden_lines": 0
+    }
+  }
+}
