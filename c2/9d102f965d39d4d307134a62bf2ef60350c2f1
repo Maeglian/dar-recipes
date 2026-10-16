@@ -1,0 +1,230 @@
+src/test/setup.ts
+  s_de2ed2bd090c5d::t_43e72e02409f0e 1
+src/App.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-7
+src/styles/base.css
+  s_de2ed2bd090c5d::t_57929141097bba 1-165
+package.json
+  s_de2ed2bd090c5d::t_c915395a51302a 15-17,22-24,27
+  s_de2ed2bd090c5d::t_61ea92ec8e8082 25
+  s_de2ed2bd090c5d::t_c5b5e2da7da3b1 1-14,18-21,26,28-30
+src/router.ts
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-23
+src/views/CollectionsView.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-5
+.gitignore
+  s_de2ed2bd090c5d::t_c5b5e2da7da3b1 1-7
+  s_de2ed2bd090c5d::t_3c1afa2a81a6d7 8
+openspec/changes/add-recipe-app/tasks.md
+  s_de2ed2bd090c5d::t_c915395a51302a 8
+  s_de2ed2bd090c5d::t_4229902c65c65f 7
+  s_de2ed2bd090c5d::t_3c1afa2a81a6d7 10-11
+  s_de2ed2bd090c5d::t_dab6851b1a740b 9
+vitest.config.ts
+  s_de2ed2bd090c5d::t_43e72e02409f0e 1-13
+src/views/ShoppingListView.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-5
+.github/workflows/deploy.yml
+  s_de2ed2bd090c5d::t_3c1afa2a81a6d7 1-43
+src/views/DataView.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-5
+src/views/RecipeEditView.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-5
+src/views/RecipeView.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-5
+src/main.ts
+  s_de2ed2bd090c5d::t_d2b90363c1765a 3,7
+  s_de2ed2bd090c5d::t_57929141097bba 4-5
+src/views/CatalogView.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-5
+src/components/BottomNav.vue
+  s_de2ed2bd090c5d::t_d2b90363c1765a 1-61
+src/test/smoke.test.ts
+  s_de2ed2bd090c5d::t_43e72e02409f0e 1-7
+src/styles/tokens.css
+  s_de2ed2bd090c5d::t_57929141097bba 1-30
+README.md
+  s_de2ed2bd090c5d::t_3c1afa2a81a6d7 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "0.0.61",
+  "base_commit_sha": "c29d102f965d39d4d307134a62bf2ef60350c2f1",
+  "prompts": {},
+  "sessions": {
+    "s_de2ed2bd090c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "09bbe74f-1feb-4e93-95fa-94ef6502669d",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Maria Isaeva <isaeva-mariya@yandex.ru>",
+      "usage": [
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 124,
+          "output_tokens": 73612,
+          "cache_read_tokens": 5659186,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 98660,
+          "assistant_messages": 62,
+          "turns": 0,
+          "ai_wall_ms": 255709,
+          "first_ts": "2026-10-16T13:42:33.261Z",
+          "last_ts": "2026-10-16T14:38:59.184Z",
+          "session_total_output_tokens": 198969
+        },
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 102,
+          "output_tokens": 29697,
+          "cache_read_tokens": 6928775,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 62338,
+          "assistant_messages": 48,
+          "turns": 1,
+          "ai_wall_ms": 55105,
+          "first_ts": "2026-10-16T14:39:39.760Z",
+          "last_ts": "2026-10-16T14:42:44.794Z",
+          "skill": "opsx:apply",
+          "plugin": "opsx",
+          "skill_invocations": 1,
+          "session_total_output_tokens": 198969
+        },
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 6,
+          "output_tokens": 629,
+          "cache_read_tokens": 114748,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 54239,
+          "assistant_messages": 3,
+          "turns": 1,
+          "ai_wall_ms": 2241,
+          "first_ts": "2026-10-16T13:42:52.151Z",
+          "last_ts": "2026-10-16T13:42:59.749Z",
+          "skill": "opsx:explore",
+          "plugin": "opsx",
+          "skill_invocations": 1,
+          "session_total_output_tokens": 198969
+        },
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 72,
+          "output_tokens": 95031,
+          "cache_read_tokens": 3302408,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 130176,
+          "assistant_messages": 34,
+          "turns": 1,
+          "ai_wall_ms": 210609,
+          "first_ts": "2026-10-16T14:09:00.448Z",
+          "last_ts": "2026-10-16T14:13:41.939Z",
+          "skill": "opsx:propose",
+          "plugin": "opsx",
+          "skill_invocations": 1,
+          "session_total_output_tokens": 198969
+        }
+      ],
+      "tools": [
+        {
+          "tool": "Bash",
+          "model": "claude-opus-5-5",
+          "calls": 26,
+          "result_chars": 34925,
+          "result_input_tokens": 49,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 32798,
+          "call_output_tokens": 21567
+        },
+        {
+          "tool": "Edit",
+          "model": "claude-opus-5-5",
+          "calls": 12,
+          "result_chars": 2102,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 5191,
+          "call_output_tokens": 22169
+        },
+        {
+          "tool": "Read",
+          "model": "claude-opus-5-5",
+          "calls": 1,
+          "result_chars": 3538,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 1692,
+          "call_output_tokens": 112
+        },
+        {
+          "tool": "ToolSearch",
+          "model": "claude-opus-5-5",
+          "calls": 1,
+          "result_chars": 0,
+          "result_input_tokens": 0,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 0,
+          "call_output_tokens": 454
+        },
+        {
+          "tool": "Write",
+          "model": "claude-opus-5-5",
+          "calls": 11,
+          "result_chars": 2155,
+          "result_input_tokens": 15,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 26196,
+          "call_output_tokens": 33736
+        },
+        {
+          "tool": "mcp__playwright__browser_console_messages",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 218,
+          "result_input_tokens": 0,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 177,
+          "call_output_tokens": 469
+        },
+        {
+          "tool": "mcp__playwright__browser_navigate",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 343,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 343,
+          "call_output_tokens": 141
+        },
+        {
+          "tool": "mcp__playwright__browser_resize",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 123,
+          "result_input_tokens": 0,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 123,
+          "call_output_tokens": 141
+        },
+        {
+          "tool": "mcp__playwright__browser_run_code_unsafe",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 1447,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 1177,
+          "call_output_tokens": 469
+        }
+      ],
+      "context_at_start_tokens": 47452,
+      "accepted_lines": 455,
+      "overridden_lines": 0
+    }
+  }
+}
