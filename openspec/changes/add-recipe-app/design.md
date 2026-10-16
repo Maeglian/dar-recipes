@@ -75,7 +75,7 @@ interface Ingredient { id: string; name: string; amount: number | null;
   unit: UnitKey | null; customUnit: string | null; bought: boolean }
 interface Recipe { id: string; title: string; titleKey: string; description: string;
   hasImage: boolean; baseServings: number; servings: number; rating: Rating | null;
-  collectionIds: string[]; selected: boolean; ingredients: Ingredient[];
+  collectionIds: string[]; selected: boolean; cooked: boolean; ingredients: Ingredient[];
   createdAt: number; updatedAt: number }
 interface Collection { id: string; name: string; nameKey: string }
 interface ManualItem { id: string; name: string; amount: number | null;
@@ -161,6 +161,14 @@ UI-библиотеки нет, только свой CSS mobile-first. Комп
 - `fake-indexeddb` для репозиториев и экспорта/импорта: транзакционность, удаление коллекции, атомарность импорта.
 - `@vue/test-utils` в окружении `happy-dom` для ключевых компонентов: шаговый переключатель порций, строка ингредиента, форма рецепта.
 - Сжатие картинок, установка PWA и офлайн-режим проверяются вручную в браузере и на телефоне, так как canvas и service worker в jsdom/happy-dom не воспроизводятся.
+
+### 12. «Новое» и «Приготовлено»
+«Новое» — не запись в таблице `collections`, а вычисляемая коллекция: все рецепты с `cooked === false`. Альтернатива — настоящая коллекция, которую приложение ставит и снимает само — отвергнута: её можно переименовать, удалить или снять вручную, и тогда она разошлась бы с отметкой «Приготовлено». Пришлось бы защищать её особыми случаями во всём коде коллекций.
+
+- В `Recipe` добавляется `cooked: boolean`. Схема Dexie поднимается до версии 2 с `upgrade`, который проставляет `cooked = rating !== null`: оценка означает, что рецепт готовили (решение «оценка отмечает приготовленным»), а остальные рецепты попадают в «Новое». Поле не индексируется, как и другие булевы (решение 3).
+- `createRecipe` создаёт рецепт с `cooked = false`. `updateRecipe` поле не трогает. `setRating` с непустой оценкой ставит `cooked = true` в той же операции. Снятие оценки отметку не меняет.
+- В фильтре каталога «Новое» кодируется зарезервированным значением `collection=new` в адресе. id настоящих коллекций — UUID, поэтому совпадение исключено. Константа `NEW_COLLECTION_ID` живёт в `src/domain/catalog.ts`.
+- Формат экспорта поднимается до версии 2 с полем `cooked`. Импорт принимает версии 1 и 2, у файлов версии 1 `cooked` выводится так же, как при миграции.
 
 ## Risks / Trade-offs
 

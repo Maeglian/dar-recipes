@@ -4,7 +4,7 @@
   --color-text: #1f2328;
   --color-text-muted: #5c6370;
   --color-border: #e1ded8;
-  --color-accent: #c2552d;
+  --color-accent: #047857;
   --color-accent-text: #ffffff;
   --color-danger: #b42318;
   --color-done: #8a8f98;
@@ -14,6 +14,13 @@
   --rating-good: #dcedfb;
   --rating-sometimes: #fff4c2;
   --rating-bad: #fde0de;
+
+  /* Насыщенные пары к фонам оценок — начало градиента картинки-заглушки */
+  --rating-excellent-deep: #9fdcb2;
+  --rating-good-deep: #a3cbef;
+  --rating-sometimes-deep: #f3d46c;
+  --rating-bad-deep: #f2aca5;
+  --rating-none-deep: #e2ddd5;
 
   --space-1: 4px;
   --space-2: 8px;

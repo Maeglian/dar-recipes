@@ -3,6 +3,6 @@ import BottomNav from './components/BottomNav.vue'
 </script>
 
 <template>
-  <RouterView />
+  <RouterView :key="$route.fullPath" />
   <BottomNav />
 </template>
