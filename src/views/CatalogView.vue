@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LoadingState from '../components/LoadingState.vue'
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import RecipeCard from '../components/RecipeCard.vue'
@@ -71,7 +72,7 @@ function resetFilters() {
       <RouterLink class="btn btn-primary" :to="{ name: 'recipe-new' }">+ Рецепт</RouterLink>
     </header>
 
-    <p v-if="loading" class="muted">Загрузка…</p>
+    <LoadingState v-if="loading" />
 
     <div v-else-if="!hasRecipes" class="empty">
       <p>Рецептов пока нет. Добавьте первый — с ингредиентами, порциями и фото.</p>

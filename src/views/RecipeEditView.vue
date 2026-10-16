@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { computed, ref, shallowRef } from 'vue'
-import { useRouter } from 'vue-router'
+import LoadingState from '../components/LoadingState.vue'
+import { computed, onBeforeUnmount, onMounted, ref, shallowRef } from 'vue'
+import { onBeforeRouteLeave, useRouter } from 'vue-router'
+import BackButton from '../components/BackButton.vue'
 import CollectionPicker from '../components/CollectionPicker.vue'
 import IngredientEditor from '../components/IngredientEditor.vue'
 import { useObjectUrl } from '../composables/useObjectUrl'
@@ -35,6 +37,24 @@ const imageError = ref<string | null>(null)
 const imageProcessing = ref(false)
 const imageUrl = useObjectUrl(image)
 
+// Несохранённые изменения: сравниваем форму со снимком на момент открытия
+const initialSnapshot = ref(JSON.stringify(draft.value))
+const saved = ref(false)
+const isDirty = computed(() => !saved.value && (imageChanged.value || JSON.stringify(draft.value) !== initialSnapshot.value))
+
+onBeforeRouteLeave(() => {
+  if (!isDirty.value) return true
+  return window.confirm('Выйти без сохранения? Изменения пропадут.')
+})
+
+function onBeforeUnload(event: BeforeUnloadEvent) {
+  if (isDirty.value) event.preventDefault()
+}
+onMounted(() => window.addEventListener('beforeunload', onBeforeUnload))
+onBeforeUnmount(() => window.removeEventListener('beforeunload', onBeforeUnload))
+
+const backFallback = computed(() => (props.id ? { name: 'recipe', params: { id: props.id } } : { name: 'catalog' }))
+
 function emptyIngredient(): IngredientDraft {
   return { id: newId(), name: '', amount: '', unit: 'g', customUnit: '', bought: false }
 }
@@ -65,6 +85,7 @@ async function load(id: string) {
     collectionIds: [...recipe.collectionIds],
   }
   image.value = recipe.hasImage ? ((await getImage(id)) ?? null) : null
+  initialSnapshot.value = JSON.stringify(draft.value)
   loading.value = false
 }
 
@@ -127,6 +148,7 @@ async function save() {
     const id = props.id ?? (await createRecipe(result.value))
     if (props.id) await updateRecipe(props.id, result.value)
     if (imageChanged.value) await setImage(id, image.value)
+    saved.value = true
     await router.replace({ name: 'recipe', params: { id } })
   } catch (err) {
     saveError.value = describeSaveError(err)
@@ -152,17 +174,29 @@ function cancel() {
 
 <template>
   <div class="page">
+    <div class="form-topbar">
+      <BackButton class="form-topbar__back" :fallback="backFallback" />
+      <button
+        v-if="!loading && !notFound"
+        type="submit"
+        form="recipe-form"
+        class="btn btn-primary"
+        :disabled="saving || imageProcessing"
+      >
+        Сохранить
+      </button>
+    </div>
     <header class="page-header">
       <h1>{{ isNew ? 'Новый рецепт' : 'Редактирование' }}</h1>
     </header>
 
-    <p v-if="loading" class="muted">Загрузка…</p>
+    <LoadingState v-if="loading" />
     <div v-else-if="notFound" class="empty">
       <p>Рецепт не найден.</p>
       <RouterLink class="btn" to="/">К рецептам</RouterLink>
     </div>
 
-    <form v-else class="recipe-form" novalidate @submit.prevent="save">
+    <form v-else id="recipe-form" class="recipe-form" novalidate @submit.prevent="save">
       <div class="field">
         <label for="title">Название</label>
         <input
@@ -242,6 +276,25 @@ function cancel() {
 </template>
 
 <style scoped>
+/* Панель «Назад / Сохранить» видна всегда, без прокрутки до конца формы */
+.form-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin: calc(-1 * var(--space-4)) calc(-1 * var(--space-4)) var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.form-topbar__back {
+  margin-bottom: 0;
+}
+
 .recipe-form__image {
   border-radius: var(--radius);
   overflow: hidden;

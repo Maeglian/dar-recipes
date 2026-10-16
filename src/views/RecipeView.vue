@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LoadingState from '../components/LoadingState.vue'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import BackButton from '../components/BackButton.vue'
@@ -65,7 +66,7 @@ async function remove() {
 <template>
   <div class="page">
     <BackButton />
-    <p v-if="loading" class="muted">Загрузка…</p>
+    <LoadingState v-if="loading" />
     <div v-else-if="notFound" class="empty">
       <p>Рецепт не найден.</p>
       <RouterLink class="btn" to="/">К рецептам</RouterLink>

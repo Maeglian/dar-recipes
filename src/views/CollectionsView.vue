@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LoadingState from '../components/LoadingState.vue'
 import { computed, nextTick, ref } from 'vue'
 import { useCollections } from '../composables/useCollections'
 import { useLiveQuery } from '../composables/useLiveQuery'
@@ -95,7 +96,7 @@ async function remove(c: Collection) {
     </form>
     <p v-if="createError" class="error">{{ createError }}</p>
 
-    <p v-if="loading" class="muted">Загрузка…</p>
+    <LoadingState v-if="loading" />
 
     <ul v-else class="collections">
       <li class="collections__item card collections__item--builtin" data-testid="builtin-new">

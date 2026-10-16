@@ -1,5 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie'
 import type { Collection, ManualItem, Recipe, RecipeImage } from '../domain/types'
+import { installDiagnostics, recordOpenError } from './diagnostics'
 
 export const DB_NAME = 'dar-recipes'
 
@@ -34,6 +35,8 @@ export class RecipesDb extends Dexie {
 }
 
 export const db = new RecipesDb()
+installDiagnostics(db)
+db.open().catch(recordOpenError)
 
 export function newId(): string {
   return crypto.randomUUID()

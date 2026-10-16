@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import LoadingState from '../components/LoadingState.vue'
 import { computed, ref } from 'vue'
 import ShoppingRowItem from '../components/ShoppingRowItem.vue'
 import { useShoppingList } from '../composables/useShoppingList'
@@ -102,7 +103,7 @@ async function removeManual(row: ShoppingRow) {
       </span>
     </div>
 
-    <p v-if="loading" class="muted">Загрузка…</p>
+    <LoadingState v-if="loading" />
 
     <div v-else-if="rows.length === 0" class="empty">
       <p>Список пуст.</p>

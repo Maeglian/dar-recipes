@@ -1,5 +1,7 @@
 import { flushPromises, mount } from '@vue/test-utils'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { h } from 'vue'
+import { RouterView } from 'vue-router'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { db } from '../data/db'
 import { makeIngredient, makeRecipe, resetDb } from '../test/factories'
 import { makeTestRouter } from '../test/router'
@@ -75,5 +77,61 @@ describe('RecipeEditView', () => {
       expect((await db.recipes.get('r1'))!.ingredients.map((i) => i.name)).toEqual(['Яйца', 'Мука']),
     )
     expect((await db.recipes.get('r1'))!.ingredients.map((i) => i.name)).toEqual(['Яйца', 'Мука'])
+  })
+
+  describe('несохранённые изменения', () => {
+    // Хук onBeforeRouteLeave работает только у компонента, отрисованного через RouterView
+    async function mountRoute(path = '/recipes/new') {
+      const router = await makeTestRouter(path)
+      const wrapper = mount({ render: () => h(RouterView) }, { global: { plugins: [router] } })
+      await vi.waitFor(() => expect(wrapper.find('#title').exists()).toBe(true))
+      return { wrapper, router }
+    }
+
+    afterEach(() => vi.unstubAllGlobals())
+
+    it('уход с изменённой формы спрашивает подтверждение и при отказе остаётся на месте', async () => {
+      const confirm = vi.fn(() => false)
+      vi.stubGlobal('confirm', confirm)
+      const { wrapper, router } = await mountRoute()
+      await wrapper.find('#title').setValue('Блины')
+      await router.push('/shopping')
+      expect(confirm).toHaveBeenCalled()
+      expect(router.currentRoute.value.name).toBe('recipe-new')
+    })
+
+    it('при согласии уходит без сохранения', async () => {
+      vi.stubGlobal('confirm', vi.fn(() => true))
+      const { wrapper, router } = await mountRoute()
+      await wrapper.find('#title').setValue('Блины')
+      await router.push('/shopping')
+      expect(router.currentRoute.value.name).toBe('shopping')
+      expect(await db.recipes.count()).toBe(0)
+    })
+
+    it('уход с нетронутой формы не спрашивает подтверждение', async () => {
+      const confirm = vi.fn(() => false)
+      vi.stubGlobal('confirm', confirm)
+      const { router } = await mountRoute()
+      await router.push('/shopping')
+      expect(confirm).not.toHaveBeenCalled()
+      expect(router.currentRoute.value.name).toBe('shopping')
+    })
+
+    it('после сохранения подтверждение не спрашивается', async () => {
+      const confirm = vi.fn(() => false)
+      vi.stubGlobal('confirm', confirm)
+      const { wrapper, router } = await mountRoute()
+      await wrapper.find('#title').setValue('Блины')
+      await wrapper.find('form').trigger('submit')
+      await vi.waitFor(() => expect(router.currentRoute.value.name).toBe('recipe'))
+      expect(confirm).not.toHaveBeenCalled()
+    })
+
+    it('кнопки «Назад» и «Сохранить» есть в верхней панели', async () => {
+      const { wrapper } = await mountForm()
+      expect(wrapper.find('.form-topbar button[type="submit"][form="recipe-form"]').exists()).toBe(true)
+      expect(wrapper.find('.form-topbar').text()).toContain('Назад')
+    })
   })
 })
