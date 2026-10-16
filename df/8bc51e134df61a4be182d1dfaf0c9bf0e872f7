@@ -1,0 +1,96 @@
+src/data/db.ts
+  s_de2ed2bd090c5d::t_52aac8a833f281 3,38-39
+src/views/CatalogView.vue
+  s_de2ed2bd090c5d::t_52aac8a833f281 2,75
+src/components/LoadingState.test.ts
+  s_de2ed2bd090c5d::t_f2e5fc266a688f 1-19
+src/components/RatingPicker.test.ts
+  s_de2ed2bd090c5d::t_b48946da4f8f43 23
+  s_de2ed2bd090c5d::t_f2e5fc266a688f 5-6,10,14-22,24-25,30-36
+src/views/RecipeEditView.test.ts
+  s_de2ed2bd090c5d::t_537ef09171e30f 2-4,83-92,94-96,98,101-109,113-115,122-124,131
+  s_de2ed2bd090c5d::t_7f2c61e9df8c94 81-82,93,97,99-100,110-112,116-121,125-130,132-136
+src/components/LoadingState.vue
+  s_de2ed2bd090c5d::t_52aac8a833f281 1-22,25-45,47-75
+  s_de2ed2bd090c5d::t_f2e5fc266a688f 23-24,46
+src/components/RatingPicker.vue
+  s_de2ed2bd090c5d::t_f2e5fc266a688f 2,9-15,18-20,31-32,35,49-52,59-77
+src/views/CollectionsView.vue
+  s_de2ed2bd090c5d::t_52aac8a833f281 2,99
+src/views/RecipeView.vue
+  s_de2ed2bd090c5d::t_52aac8a833f281 2,69
+src/views/RecipeEditView.vue
+  s_de2ed2bd090c5d::t_52aac8a833f281 2,193
+  s_de2ed2bd090c5d::t_cc8446cc1ef1ce 3-5,40-57,88,151,177-188,199,279-297
+src/data/diagnostics.ts
+  s_de2ed2bd090c5d::t_52aac8a833f281 1-73
+src/views/ShoppingListView.vue
+  s_de2ed2bd090c5d::t_52aac8a833f281 2,106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "0.0.61",
+  "base_commit_sha": "df8bc51e134df61a4be182d1dfaf0c9bf0e872f7",
+  "prompts": {},
+  "sessions": {
+    "s_de2ed2bd090c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "09bbe74f-1feb-4e93-95fa-94ef6502669d",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Maria Isaeva <isaeva-mariya@yandex.ru>",
+      "usage": [
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 90,
+          "output_tokens": 64923,
+          "cache_read_tokens": 18471524,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 87337,
+          "assistant_messages": 45,
+          "turns": 0,
+          "ai_wall_ms": 144272,
+          "first_ts": "2026-10-16T15:38:55.931Z",
+          "last_ts": "2026-10-16T15:51:30.576Z",
+          "session_total_output_tokens": 754859
+        }
+      ],
+      "tools": [
+        {
+          "tool": "Bash",
+          "model": "claude-opus-5-5",
+          "calls": 9,
+          "result_chars": 2837,
+          "result_input_tokens": 18,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 16611,
+          "call_output_tokens": 14442
+        },
+        {
+          "tool": "Read",
+          "model": "claude-opus-5-5",
+          "calls": 1,
+          "result_chars": 2059,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 2040,
+          "call_output_tokens": 1101
+        },
+        {
+          "tool": "mcp__playwright__browser_run_code_unsafe",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 4,
+          "result_chars": 7762,
+          "result_input_tokens": 8,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 9469,
+          "call_output_tokens": 5729
+        }
+      ],
+      "accepted_lines": 353,
+      "overridden_lines": 0
+    }
+  }
+}
