@@ -1,0 +1,418 @@
+src/domain/shopping-list.test.ts
+  s_de2ed2bd090c5d::t_7f279faf737b05 1-183,193-194
+  s_de2ed2bd090c5d::t_01bee1af375648 184-192
+src/domain/shopping-list.ts
+  s_de2ed2bd090c5d::t_7f279faf737b05 1-10,12-87,90-92,95-105
+  s_de2ed2bd090c5d::t_01bee1af375648 11,88-89,93-94
+src/data/db.ts
+  s_de2ed2bd090c5d::t_c338b86212fced 21-22,30
+  s_de2ed2bd090c5d::t_e3e6d0dba4357f 23-29,31-32
+  s_de2ed2bd090c5d::t_a7517520fbc12c 1-20,33-40
+package.json
+  s_de2ed2bd090c5d::t_4b83a205885e27 27,29-30
+src/data/backup.test.ts
+  s_de2ed2bd090c5d::t_1e2fc613caeb77 1-20,22-62,64-136,154-155
+  s_de2ed2bd090c5d::t_e36d5abb2875dd 21,63,137-138,140-144,147-153
+  s_de2ed2bd090c5d::t_c338b86212fced 139,145-146
+src/data/recipeRepository.ts
+  s_de2ed2bd090c5d::t_e3e6d0dba4357f 24,87,89-93
+  s_de2ed2bd090c5d::t_fd5ef888a53f3d 65-84,94
+  s_de2ed2bd090c5d::t_d80274402beef2 1,3-23,25-64
+  s_de2ed2bd090c5d::t_b4bebd1e7ee85a 95-99
+  s_de2ed2bd090c5d::t_67b9f0065ae513 2,85-86,88
+src/components/RecipeCard.vue
+  s_de2ed2bd090c5d::t_46a77c505f2e4d 8,20,53,61
+  s_de2ed2bd090c5d::t_de18ea682b310b 1-5,7,9-19,21-22,27-52,54-60,62-68,75-82
+  s_de2ed2bd090c5d::t_db0eac4f2f960d 6,23-26,69-74
+src/components/ServingsStepper.test.ts
+  s_de2ed2bd090c5d::t_e8df47a2de01b8 1-30
+src/data/persistence.ts
+  s_de2ed2bd090c5d::t_118978ed61dffc 1-18
+src/domain/units.ts
+  s_de2ed2bd090c5d::t_5fc1bac375f28a 1-120
+src/domain/text.test.ts
+  s_de2ed2bd090c5d::t_a7517520fbc12c 1-21
+src/data/backup.ts
+  s_de2ed2bd090c5d::t_4e14d8f973febc 1-6,10-177,185-208,211-253,258-274,276-295
+  s_de2ed2bd090c5d::t_e36d5abb2875dd 7-9,178-184,254-257,275
+  s_de2ed2bd090c5d::t_c338b86212fced 209-210
+openspec/changes/add-recipe-app/specs/recipe-collections/spec.md
+  s_de2ed2bd090c5d::t_6c1880167ad57e 41-62
+src/views/ShoppingListView.vue
+  s_de2ed2bd090c5d::t_cc2bcca6a47d46 1-41,44-145,148-232
+src/composables/useRecipe.ts
+  s_de2ed2bd090c5d::t_e8df47a2de01b8 1-15
+openspec/changes/add-recipe-app/tasks.md
+  s_de2ed2bd090c5d::t_7f279faf737b05 42
+  s_de2ed2bd090c5d::t_118978ed61dffc 53-54
+  s_de2ed2bd090c5d::t_d291270aa8efa0 58,64-68
+  s_de2ed2bd090c5d::t_67b9f0065ae513 39
+  s_de2ed2bd090c5d::t_f76c5b44d2ed96 38
+  s_de2ed2bd090c5d::t_d80274402beef2 23
+  s_de2ed2bd090c5d::t_a11b1602ea8e9d 40
+  s_de2ed2bd090c5d::t_66c65c3087dfdb 12
+  s_de2ed2bd090c5d::t_4f0af031b042a6 22
+  s_de2ed2bd090c5d::t_d7d414ca37f365 55
+  s_de2ed2bd090c5d::t_4fac77be1472da 49
+  s_de2ed2bd090c5d::t_13352d8ad31678 29
+  s_de2ed2bd090c5d::t_5fc1bac375f28a 18
+  s_de2ed2bd090c5d::t_de8a6177551485 46
+  s_de2ed2bd090c5d::t_7ac2b08da33f76 63
+  s_de2ed2bd090c5d::t_d48a39a143cb3b 48
+  s_de2ed2bd090c5d::t_d67a2d89263f98 25-28
+  s_de2ed2bd090c5d::t_de18ea682b310b 41
+  s_de2ed2bd090c5d::t_b4bebd1e7ee85a 47
+  s_de2ed2bd090c5d::t_c338b86212fced 60-61
+  s_de2ed2bd090c5d::t_1a2ed65499499f 24
+  s_de2ed2bd090c5d::t_59b2c818b42feb 33-34
+  s_de2ed2bd090c5d::t_bf0d1c0c001efb 16-17
+  s_de2ed2bd090c5d::t_42de612b3dde46 62
+src/components/NewBadge.vue
+  s_de2ed2bd090c5d::t_db0eac4f2f960d 1-16
+src/composables/useShoppingList.ts
+  s_de2ed2bd090c5d::t_d48a39a143cb3b 1-21
+package-lock.json
+  s_de2ed2bd090c5d::t_11fe263b73044f 23,25-26,29-46,48-50,52-56,61,63-65,71-75,78-92,95-99,102-112,114-116,119-123,129-133,136-139,142-146,149-156,159-183,185-193,195-198,201-209,211-215,218-226,229-232,234-237,239-243,245-253,256-259,263,266-269,272-275,277,280-283,286-289,291,294-297,300-304,306-309,312-315,318-320,322,325-328,332,335-338,341-345,347-350,353-356,359-363,365-368,371-374,377-380,382,385-388,391,394-397,400,403-406,410,413-416,419-423,425,428-431,434-437,439,442-445,447-452,454,457-460,464-471,474-477,481-487,490-493,497-503,506-509,513-514,517,520,523-526,530-532,534-535,538,541-544,548-555,558-561,564-568,571-574,578-584,587-590,594-600,603-607,610-611,614,617,620-624,627-633,636-640,643-651,654-658,661-669,672-676,679-685,688-692,695-701,704-708,711-718,721-724,728-735,738-742,745-756,759-763,766-773,776-780,783-790,793-797,800-807,810-813,817,819-820,822-823,826-829,831-835,837-840,843-847,849-850,853-856,859-862,865-868,870-873,876-880,883,886,888-889,892-896,899,902,904-905,908-912,914-917,919-922,925-929,931-935,937-940,943-947,950,953-956,959-963,966,969-972,975-979,982,985,987-988,991-995,998-1004,1007-1010,1013-1016,1018-1021,1024-1028,1030-1038,1041-1044,1048-1051,1054-1057,1060-1063,1067-1068,1071-1074,1077-1080,1083-1086,1088-1091,1094-1098,1101,1104,1106-1107,1110-1113,1116-1118,1120-1123,1126-1129,1133-1134,1136-1139,1142-1145,1149-1153,1156-1159,1162-1171,1173,1175-1176,1179-1182,1184-1187,1189-1192,1195-1198,1200-1204,1206-1209,1212-1216,1218-1220,1222,1225,1228-1231,1234-1237,1239-1242,1245-1248,1250,1252-1254,1257,1259-1260,1263-1266,1270,1273-1276,1279-1282,1284-1293,1295-1298,1302-1303,1306-1309,1312-1315,1317,1319,1322,1324-1325,1328-1331,1333-1336,1338,1340-1341,1344-1347,1349-1353,1355,1357-1358,1361-1364,1366-1369,1371,1373-1374,1377-1713,1718,1721,1724-1739,1741,1744-1747,1752,1755,1758,1761-1764,1769-1837,1843,1846-1849,1854-1939,1945-5785,5787-5814,5817-5820,5822-5829,5831,5834,5837-5840,5842-5846,5848,5851,5854-5857,5859-5864,5866,5869,5872-5881,5883-5885,5887-5888,5891-5905,5908-5913,5916-5929,5931-5932,5935-5938,5940-5945,5947,5950-5954,5957-5960,5963-5977,5980-5984,5987,5990,5993-5996,5998,6000-6001,6004,6007,6010-6013,6015-6021,6023-6026,6029-6033,6036-6046,6049-6060,6062-6066,6068-6069,6072-6080,6082-6086,6088,6091-6094,6096-6107,6109,6112-6116,6119-6122,6125-6128,6130,6133-6136,6138,6140-6152,6155,6158,6161-6165,6167-6176,6178,6181,6184-6188,6191-6200,6203-6207,6210-6212,6215-6218,6221-6224,6226-6234,6236-6244,6246-6250,6253,6256,6259-6273,6276-6279,6282,6284-6285,6288-6291,6293-6299,6301,6307-6310,6331-6416,6419-6423,6426-6431,6434,6437,6460-6478,6486-6552,6627-6668,6747-6777,6996-7100,7114-7358,7380-7386
+src/composables/useObjectUrl.ts
+  s_de2ed2bd090c5d::t_761dff2d4e9cff 1-23
+src/domain/ratings.ts
+  s_de2ed2bd090c5d::t_67b9f0065ae513 1-19
+src/domain/text.ts
+  s_de2ed2bd090c5d::t_a7517520fbc12c 1-8
+src/domain/validation.test.ts
+  s_de2ed2bd090c5d::t_de8a6177551485 2-9,112-139
+  s_de2ed2bd090c5d::t_4f0af031b042a6 1,10-111,140-141
+src/components/CollectionPicker.vue
+  s_de2ed2bd090c5d::t_f76c5b44d2ed96 1-75
+src/views/CollectionsView.vue
+  s_de2ed2bd090c5d::t_42de612b3dde46 12,24-25,101-107,145-147,184-188
+  s_de2ed2bd090c5d::t_3d5e479d483e7e 1-11,13-23,26-79,82-100,108-144,150-183,189-204
+src/domain/catalog.ts
+  s_de2ed2bd090c5d::t_a11b1602ea8e9d 1-5,14-30,32-38
+  s_de2ed2bd090c5d::t_db0eac4f2f960d 6-13,31
+src/data/shoppingRepository.ts
+  s_de2ed2bd090c5d::t_de8a6177551485 1-34
+src/main.ts
+  s_de2ed2bd090c5d::t_118978ed61dffc 3,9-10
+src/components/BackButton.vue
+  s_de2ed2bd090c5d::t_5522ec1af0b6e9 1-28
+openspec/changes/add-recipe-app/specs/recipe-catalog/spec.md
+  s_de2ed2bd090c5d::t_6c1880167ad57e 28,34-36
+src/App.vue
+  s_de2ed2bd090c5d::t_3571f0a1e304d5 6
+src/data/shoppingRepository.test.ts
+  s_de2ed2bd090c5d::t_de8a6177551485 1-70
+src/domain/image.test.ts
+  s_de2ed2bd090c5d::t_1a2ed65499499f 2,4-18
+src/components/IngredientRow.vue
+  s_de2ed2bd090c5d::t_7f545813f0b3d4 7,13-25,31-34,37,39-40,43-51,66-71
+  s_de2ed2bd090c5d::t_e8df47a2de01b8 1-6,8-12,26-30,35-36,38,41-42,52-65,72-73
+src/data/collectionRepository.ts
+  s_de2ed2bd090c5d::t_59b2c818b42feb 1-23,28-64
+  s_de2ed2bd090c5d::t_890b538e5f0c15 24-27
+src/data/manualItemRepository.ts
+  s_de2ed2bd090c5d::t_de8a6177551485 1-22
+index.html
+  s_de2ed2bd090c5d::t_e0cddcc80f8141 6
+  s_de2ed2bd090c5d::t_0df257b30db2e1 8-12
+  s_de2ed2bd090c5d::t_20df263734c561 7
+tsconfig.test.json
+  s_de2ed2bd090c5d::t_817f3a76611f54 1-9
+src/domain/types.ts
+  s_de2ed2bd090c5d::t_a7517520fbc12c 1-29,32-55
+  s_de2ed2bd090c5d::t_e3e6d0dba4357f 30-31
+src/views/RecipeView.vue
+  s_de2ed2bd090c5d::t_43a75635279767 1,3,5,10,13-14,27-34,53-64,68-74,76,78-79,96,109-112,119-125,127-129,135-146,149-159,165-171,200-208,225-245
+  s_de2ed2bd090c5d::t_7f545813f0b3d4 2,43-48,113-118,126,209-224
+  s_de2ed2bd090c5d::t_0e823f1fa0196f 8,77,160-164
+  s_de2ed2bd090c5d::t_5522ec1af0b6e9 4,67
+  s_de2ed2bd090c5d::t_b4bebd1e7ee85a 11,15-18,20-23,106-108
+  s_de2ed2bd090c5d::t_67b9f0065ae513 7,9,25-26,49-52,75,130-134
+  s_de2ed2bd090c5d::t_42de612b3dde46 6,19,24,80-85,97-105,172-193
+  s_de2ed2bd090c5d::t_f76c5b44d2ed96 12,35-42,86-95,194-199
+src/data/collectionRepository.test.ts
+  s_de2ed2bd090c5d::t_59b2c818b42feb 1-60
+src/composables/useCollections.ts
+  s_de2ed2bd090c5d::t_f76c5b44d2ed96 1-12
+src/domain/validation.ts
+  s_de2ed2bd090c5d::t_de8a6177551485 128-168
+  s_de2ed2bd090c5d::t_4f0af031b042a6 1-127
+src/components/ServingsStepper.vue
+  s_de2ed2bd090c5d::t_e8df47a2de01b8 1-62
+src/data/imageRepository.ts
+  s_de2ed2bd090c5d::t_1a2ed65499499f 1-17
+src/data/recipeRepository.test.ts
+  s_de2ed2bd090c5d::t_fd5ef888a53f3d 5-10,13-15,93-126
+  s_de2ed2bd090c5d::t_e3e6d0dba4357f 11-12,127-158
+  s_de2ed2bd090c5d::t_d80274402beef2 1-4,16-92,159-160
+src/components/RatingBadge.vue
+  s_de2ed2bd090c5d::t_3ff9a092c4e43f 15-16
+  s_de2ed2bd090c5d::t_67b9f0065ae513 1-14,17-24
+vite.config.ts
+  s_de2ed2bd090c5d::t_0df257b30db2e1 3,8-25,27-39
+  s_de2ed2bd090c5d::t_e0cddcc80f8141 26
+src/components/RecipeImagePlaceholder.vue
+  s_de2ed2bd090c5d::t_0e823f1fa0196f 1-46
+src/domain/units.test.ts
+  s_de2ed2bd090c5d::t_5fc1bac375f28a 1-133
+openspec/changes/add-recipe-app/specs/recipe-ratings/spec.md
+  s_de2ed2bd090c5d::t_6c1880167ad57e 34-44
+src/data/db.migration.test.ts
+  s_de2ed2bd090c5d::t_e3e6d0dba4357f 1-5,7-14,19-22,25-28
+  s_de2ed2bd090c5d::t_c338b86212fced 6,15-18,23-24
+src/domain/image.ts
+  s_de2ed2bd090c5d::t_1a2ed65499499f 1-45
+src/views/RecipeEditView.vue
+  s_de2ed2bd090c5d::t_cd519764475793 1-3,5-152,155-221,227-240,243-283
+  s_de2ed2bd090c5d::t_f76c5b44d2ed96 4,222-226
+src/test/factories.ts
+  s_de2ed2bd090c5d::t_e3e6d0dba4357f 39
+  s_de2ed2bd090c5d::t_a7517520fbc12c 1-38,40-45
+src/components/IngredientEditor.vue
+  s_de2ed2bd090c5d::t_761dff2d4e9cff 1-129
+openspec/changes/add-recipe-app/specs/recipes/spec.md
+  s_de2ed2bd090c5d::t_33656853dda062 87-101
+src/views/RecipeEditView.quota.test.ts
+  s_de2ed2bd090c5d::t_2a1798f4303b87 1-21
+vitest.config.ts
+  s_de2ed2bd090c5d::t_4f0af031b042a6 2
+tsconfig.app.json
+  s_de2ed2bd090c5d::t_817f3a76611f54 7-11,24-26,28-35
+src/views/RecipeEditView.test.ts
+  s_de2ed2bd090c5d::t_b15f35bd4566f1 2,48,74-76
+  s_de2ed2bd090c5d::t_3571f0a1e304d5 1,3-47,49-73,77-79
+src/components/RatingPicker.vue
+  s_de2ed2bd090c5d::t_67b9f0065ae513 1-46
+src/data/imageRepository.test.ts
+  s_de2ed2bd090c5d::t_1a2ed65499499f 1-24
+src/composables/useLiveQuery.test.ts
+  s_de2ed2bd090c5d::t_1dbf735414b6df 20-24
+  s_de2ed2bd090c5d::t_bf0d1c0c001efb 1-19,25-59
+src/components/BackButton.test.ts
+  s_de2ed2bd090c5d::t_5522ec1af0b6e9 1-24
+src/views/CatalogView.vue
+  s_de2ed2bd090c5d::t_de18ea682b310b 3-4,6,17,20-22,24-64,75-78,80-86,88-104,110-116,121-138,153-155
+  s_de2ed2bd090c5d::t_db0eac4f2f960d 9-16,87
+  s_de2ed2bd090c5d::t_b4bebd1e7ee85a 5,8,105-109,145-150
+  s_de2ed2bd090c5d::t_0012f717b0898b 1-2,7,18-19,23,65-66,69-74,79,119-120,139-144,151-152,156-157
+src/test/router.ts
+  s_de2ed2bd090c5d::t_3571f0a1e304d5 1-9
+src/styles/base.css
+  s_de2ed2bd090c5d::t_f76c5b44d2ed96 167-185
+  s_de2ed2bd090c5d::t_0e307b6fe158fa 69
+src/components/ShoppingRowItem.vue
+  s_de2ed2bd090c5d::t_d48a39a143cb3b 1-108
+src/views/DataView.vue
+  s_de2ed2bd090c5d::t_118978ed61dffc 1-59,62-73,76-105,108-144
+  s_de2ed2bd090c5d::t_db4f5cfc2d5e89 74-75
+openspec/changes/add-recipe-app/specs/local-data/spec.md
+  s_de2ed2bd090c5d::t_c338b86212fced 57
+  s_de2ed2bd090c5d::t_6c1880167ad57e 55-56,58
+src/test/setup.ts
+  s_de2ed2bd090c5d::t_4afcfa00d8e081 2-6
+src/data/db.test.ts
+  s_de2ed2bd090c5d::t_a7517520fbc12c 1-29
+src/router.ts
+  s_de2ed2bd090c5d::t_b15f35bd4566f1 5-16
+  s_de2ed2bd090c5d::t_3571f0a1e304d5 1,4,17-19,23
+tsconfig.json
+  s_de2ed2bd090c5d::t_817f3a76611f54 3-13
+src/composables/useLiveQuery.ts
+  s_de2ed2bd090c5d::t_bf0d1c0c001efb 1-46
+src/views/RecipeView.test.ts
+  s_de2ed2bd090c5d::t_42de612b3dde46 86-112
+  s_de2ed2bd090c5d::t_7f545813f0b3d4 1-49
+  s_de2ed2bd090c5d::t_67b9f0065ae513 50-85
+src/components/ShoppingToggle.vue
+  s_de2ed2bd090c5d::t_b4bebd1e7ee85a 1-34
+src/domain/catalog.test.ts
+  s_de2ed2bd090c5d::t_db0eac4f2f960d 3,6-8,10,17-23,27-31,41,47-59
+  s_de2ed2bd090c5d::t_a11b1602ea8e9d 1-2,4-5,9,11-16,24-26,32-40,42-46,60-71
+src/styles/tokens.css
+  s_de2ed2bd090c5d::t_0e823f1fa0196f 18-22,24
+  s_de2ed2bd090c5d::t_c3121e0ff43277 7,23
+src/components/RatingPicker.test.ts
+  s_de2ed2bd090c5d::t_67b9f0065ae513 1-17
+openspec/changes/add-recipe-app/design.md
+  s_de2ed2bd090c5d::t_d291270aa8efa0 78,165-167,169-170
+  s_de2ed2bd090c5d::t_c338b86212fced 168,171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "0.0.61",
+  "base_commit_sha": "b7990f8bd725c67cb6c6aec97f21f7d122907c7a",
+  "prompts": {},
+  "sessions": {
+    "s_de2ed2bd090c5d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "09bbe74f-1feb-4e93-95fa-94ef6502669d",
+        "model": "unknown"
+      },
+      "human_author": "Maria Isaeva <isaeva-mariya@yandex.ru>",
+      "usage": [
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 766,
+          "output_tokens": 485259,
+          "cache_read_tokens": 104114101,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 626374,
+          "assistant_messages": 383,
+          "turns": 0,
+          "ai_wall_ms": 1149542,
+          "first_ts": "2026-10-16T14:47:12.031Z",
+          "last_ts": "2026-10-16T15:36:59.043Z",
+          "session_total_output_tokens": 686360
+        },
+        {
+          "model": "claude-opus-5-5",
+          "input_tokens": 8,
+          "output_tokens": 2132,
+          "cache_read_tokens": 627320,
+          "cache_write_5m_tokens": 0,
+          "cache_write_1h_tokens": 4636,
+          "assistant_messages": 4,
+          "turns": 0,
+          "ai_wall_ms": 2456,
+          "first_ts": "2026-10-16T14:42:47.415Z",
+          "last_ts": "2026-10-16T14:42:57.731Z",
+          "skill": "opsx:apply",
+          "plugin": "opsx",
+          "session_total_output_tokens": 686360
+        }
+      ],
+      "tools": [
+        {
+          "tool": "Bash",
+          "model": "claude-opus-5-5",
+          "calls": 80,
+          "result_chars": 18007,
+          "result_input_tokens": 155,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 127381,
+          "call_output_tokens": 115346
+        },
+        {
+          "tool": "Edit",
+          "model": "claude-opus-5-5",
+          "calls": 5,
+          "result_chars": 647,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 2396,
+          "call_output_tokens": 4660
+        },
+        {
+          "tool": "Read",
+          "model": "claude-opus-5-5",
+          "calls": 17,
+          "result_chars": 0,
+          "result_input_tokens": 34,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 27502,
+          "call_output_tokens": 5731
+        },
+        {
+          "tool": "ToolSearch",
+          "model": "claude-opus-5-5",
+          "calls": 1,
+          "result_chars": 0,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 408,
+          "call_output_tokens": 183
+        },
+        {
+          "tool": "Write",
+          "model": "claude-opus-5-5",
+          "calls": 5,
+          "result_chars": 874,
+          "result_input_tokens": 8,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 15429,
+          "call_output_tokens": 15602
+        },
+        {
+          "tool": "mcp__playwright__browser_click",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 2,
+          "result_chars": 796,
+          "result_input_tokens": 4,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 821,
+          "call_output_tokens": 383
+        },
+        {
+          "tool": "mcp__playwright__browser_console_messages",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 3,
+          "result_chars": 1534,
+          "result_input_tokens": 5,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 1585,
+          "call_output_tokens": 1162
+        },
+        {
+          "tool": "mcp__playwright__browser_evaluate",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 339,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 561,
+          "call_output_tokens": 377
+        },
+        {
+          "tool": "mcp__playwright__browser_handle_dialog",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 3,
+          "result_chars": 366,
+          "result_input_tokens": 6,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 445,
+          "call_output_tokens": 186
+        },
+        {
+          "tool": "mcp__playwright__browser_run_code_unsafe",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 40,
+          "result_chars": 57284,
+          "result_input_tokens": 78,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 62823,
+          "call_output_tokens": 36141
+        },
+        {
+          "tool": "mcp__playwright__browser_snapshot",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 1,
+          "result_chars": 1454,
+          "result_input_tokens": 2,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 874,
+          "call_output_tokens": 103
+        },
+        {
+          "tool": "mcp__playwright__browser_take_screenshot",
+          "model": "claude-opus-5-5",
+          "mcp_server": "playwright",
+          "calls": 2,
+          "result_chars": 320,
+          "result_input_tokens": 4,
+          "result_cache_write_5m_tokens": 0,
+          "result_cache_write_1h_tokens": 637,
+          "call_output_tokens": 423
+        }
+      ],
+      "accepted_lines": 4961,
+      "overridden_lines": 0
+    }
+  }
+}
